@@ -1,8 +1,4 @@
-interface KnexConfig {
-  [key: string]: object;
-};
-
-const knexConfig: KnexConfig = {
+module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
@@ -15,5 +11,3 @@ const knexConfig: KnexConfig = {
     }
   },
 };
-
-export default knexConfig;
